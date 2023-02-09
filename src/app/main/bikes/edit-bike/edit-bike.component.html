@@ -1,0 +1,59 @@
+<form [formGroup]="bikeForm"(ngSubmit)="save()" class="h-full">
+  <div fxLayout="column" fxLayoutGap="20px" class="form-content">
+    <div class="input-row">
+      <mat-card fxFlex>
+        <mat-card-header>
+          <mat-card-title>{{ 'form.bike' | translate }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+            <mat-form-field fxFlex>
+              <mat-select formControlName="brand" placeholder="{{ 'table.brands.brand' | translate }}" [compareWith]="compareObjects" required>
+              <mat-option *ngFor="let brand of brands" [value]="brand">
+             {{brand.brand}}
+             </mat-option>
+            </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="input-row">
+            <mat-form-field fxFlex>
+              <mat-select formControlName="model" placeholder="{{ 'table.models.model' | translate }}" [compareWith]="compareObjects" required>
+              <mat-option *ngFor="let model of models" [value]="model">
+             {{model.model}}
+             </mat-option>
+            </mat-select>
+            </mat-form-field>
+            <mat-form-field fxFlex>
+              <mat-select formControlName="size" placeholder="{{ 'table.sizes.size' | translate }}" [compareWith]="compareObjects" required>
+              <mat-option *ngFor="let size of sizes" [value]="size">
+             {{size.size}}
+             </mat-option>
+            </mat-select>
+            </mat-form-field>
+        
+          </div>
+          <div class="input-row">
+            <mat-form-field fxFlex>
+              <input matInput type="text" color="primary" placeholder="{{ 'table.bikes.use' | translate }}"
+                formControlName="use" name="bike-use"/>
+            </mat-form-field>
+          </div>
+          <div class="input-row">
+            <mat-form-field fxFlex>
+              <input matInput type="text" color="primary" placeholder="{{ 'table.bikes.units' | translate }}"
+                formControlName="units" name="bike-units" required/>
+            </mat-form-field>
+
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div fclass="input-row" xLayoutGap="20px" fxLayoutAlign="center center">
+      <button fxFlex="25" fxFlex.xs="30" mat-raised-button type="button" (click)="cancel()"
+      [formNoValidate]="true">{{ 'button.cancel' | translate }}</button>
+      <button fxFlex="25" fxFlex.xs="30" mat-raised-button type="submit" color="primary"
+      [disabled]="!bikeForm.valid">{{ 'button.save' | translate }}</button>
+    </div>
+  </div>
+</form>

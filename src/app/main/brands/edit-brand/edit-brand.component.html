@@ -1,0 +1,19 @@
+<form [formGroup]="brandForm"(ngSubmit)="save()" class="h-full">
+  <div fxLayout="column" fxLayoutGap="20px" class="form-content">
+    <div class="input-row">
+      <mat-card fxFlex>
+        <mat-card-header>
+          <mat-card-title>{{ 'form.brand' | translate }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <div class="input-row" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px" fxLayoutGap.lt-md="0px">
+            <mat-form-field fxFlex>
+              <input matInput type="text" color="primary" placeholder="{{ 'table.brands.brand' | translate }}"
+                formControlName="brand" name="brand-brand" required/>
+            </mat-form-field>
+    <div fclass="input-row" xLayoutGap="20px" fxLayoutAlign="center center">
+      <button fxFlex="25" fxFlex.xs="30" mat-raised-button type="button" (click)="cancel()"
+      [formNoValidate]="true">{{ 'button.cancel' | translate }}</button>
+      <button fxFlex="25" fxFlex.xs="30" mat-raised-button type="submit" color="primary"
+      [disabled]="!brandForm.valid">{{ 'button.save' | translate }}</button>
+    </div>

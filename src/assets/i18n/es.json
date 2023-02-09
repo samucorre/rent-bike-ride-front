@@ -1,0 +1,82 @@
+{
+  "login": {
+    "user": "Usuario",
+    "password": "Contraseña",
+    "enter": "Entrar"
+  },
+  "demo": {
+    "title": "Demo"
+  },
+  "menu": {
+    "home": "Home",
+    "contacts": "Contactos",
+    "bikes":"Bicicletas",
+    "brands":"Marcas",
+    "models":"Modelos",
+    "sizes": "Tallas",
+    "logout": "Cerrar sesión"
+  },
+  "language": {
+    "spanish": "Español",
+    "galician": "Gallego",
+    "english": "Inglés"
+  },
+  "table": {
+    "contacts": {
+      "name": "Nombre",
+      "surname1": "Primer apellido",
+      "surname2": "Segundo apellido",
+      "phone": "Teléfono",
+      "email": "E-Mail"
+    },
+    "bikes": {
+      "brand": "Marca",
+      "model": "Modelo",
+      "size": "Talla",
+      "use": "Tipo",
+      "units": "Unidades"
+    },
+    "sizes": {
+      "size": "Talla"
+    },
+    "brands": {
+      "brand": "Marca"
+    },
+    "models": {
+      "model":"Modelo"
+    }
+    },
+
+  "form": {
+    "contact": "Contacto",
+    "bike": "Bicicleta",
+    "brand": "Marca",
+    "model":"Modelo",
+    "size":"Talla"
+  },
+  "button": {
+    "cancel": "Cancelar",
+    "save": "Guardar"
+  },
+  "paginator": {
+    "first_page": "Primera página",
+    "last_page": "Última página",
+    "items_per_page": "Elementos por página",
+    "next_page": "Página siguiente",
+    "previous_page": "Página anterior",
+    "of": "de"
+  },
+  "EN": "Inglés",
+  "ES": "Español",
+  "GL": "Gallego",
+  "USER_NOT_EXISTS": "El usuario no existe en la base de datos",
+  "WRONG_PASSWORD": "Contraseña incorrecta",
+  "TOKEN_EXPIRED": "La sesión expiró",
+  "CONTACT_CREATE_SUCCESS": "Contacto creado",
+  "CONTACT_DELETE_SUCCESS": "Contacto borrado",
+  "CLOSE": "CERRAR",
+  "filter": "Filtro",
+  "new": "Nuevo",
+  "delete": "Eliminar",
+  "refresh": "Refrescar"
+  }
