@@ -1,6 +1,6 @@
 .login-outer-container {
   margin: 8px;
-  min-height: 640px;
+  min-height: 1000px;
   background-color: #bdbdbd;
   background-image: url(../../../assets/images/1001.jpg);
   background-position: center;
@@ -34,8 +34,8 @@
       width: 150px;
       height: 150px;
       position: relative;
-      background-color: #ffffff;
-      top: -75px;
+      background-color: #409cff6f;
+      top: -25px;
       left: 50%;
       -webkit-transform: translate(-50%, 0%);
 
@@ -52,17 +52,6 @@
       top: -75px;
     }
 
-    .logo-europa-concello-container {
-      position: absolute;
-      bottom: -100px;
-      left: 50%;
-      -webkit-transform: translate(-50%, 0%);
-
-      img {
-        height: 72px;
-      }
-    }
-
     .session-expired {
       text-align: center;
     }
@@ -72,11 +61,13 @@
       margin: 30px 0 0;
       color:black;
       background:#ffd740;
+      font-size: 12pt ;
+      font-weight: bold;
     }
 
     .dark_text {
       color: #170b0b;
-      font-size: 9pt;
+      font-size: 10pt;
     }
 
     .title_text {
@@ -87,22 +78,7 @@
   }
 }
 
-@media (min-width: 480px) {
-  .login-outer-container {
-    .login-inner-container {
-      width: 370px;
-      padding-right: 2em;
-      padding-left: 2em;
 
-      .logo-europa-concello-container {
-        bottom: -180px;
-        img {
-          height: 111px;
-        }
-      }
-    }
-  }
-}
 
 @media (min-width: 600px) {
   .login-outer-container {
