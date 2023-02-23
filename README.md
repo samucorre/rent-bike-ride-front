@@ -25,7 +25,7 @@ Para poner a funcionar, ejecutar los siguientes comandos:
 npm start
 ##
 
-![image](https://user-images.githubusercontent.com/124720302/220876451-574c05a4-bef1-4c4a-94e6-e7d1c496db8d.png)
+![image](https://user-images.githubusercontent.com/124720302/220880502-9312fa15-17e0-4c15-85b5-3165d462a680.png)
 
 ![image](https://user-images.githubusercontent.com/124720302/220876707-7a68339d-3b50-4122-ba9c-1bad091524fd.png)
 
