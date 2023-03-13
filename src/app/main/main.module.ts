@@ -35,11 +35,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { LightboxModule } from 'ngx-lightbox';
 import { CoreModule } from '../core/core.module';
 import { FilterItemDirective } from './directives/filter-item.directive';
+import { RentsComponent } from './rents/rents.component';
+import { EditRentComponent } from './rents/edit-rent/edit-rent.component';
 
 @NgModule({
   declarations: [
     MainHomeComponent,
     FilterItemDirective,
+    RentsComponent,
+    EditRentComponent,
   ],
   imports: [
     TranslateModule,

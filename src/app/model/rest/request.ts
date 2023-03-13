@@ -120,3 +120,22 @@ export class EditSizeRequest extends CreateSizeRequest {
     this.id = size.id;
   }
 }
+  
+ import { Rent } from '../rent';
+
+export class CreateRentRequest {
+   rent: Rent  ["rent"]
+
+  constructor(rent: Rent) {
+  this.rent = rent.rent;
+  }
+}
+
+export class EditRentRequest extends CreateRentRequest {
+  id: number;
+
+  constructor(rent: Rent) {
+    super(rent);
+    this.id = rent.id;
+  }
+}

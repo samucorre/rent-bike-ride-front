@@ -12,6 +12,7 @@ export const environment = {
   brandsBaseUrl:'http://localhost:9999/brands',
   modelsBaseUrl:'http://localhost:9999/models',
   sizesBaseUrl:'http://localhost:9999/sizes',
+  rentsBaseUrl: 'http://localhost:9999/rents',
   
   loginBaseUrl: 'http://localhost:9999/login',
   clientName: 'demo',

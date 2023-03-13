@@ -37,4 +37,11 @@ getSize: environment.sizesBaseUrl + '/getSize',
 createSizes: environment.sizesBaseUrl + '/createSize',
 editSizes: environment.sizesBaseUrl + '/editSize',
 deleteSizes: environment.sizesBaseUrl + '/deleteSize',
+
+// Rents API
+getRents: environment.rentsBaseUrl + '/getRents',
+getRent: environment.rentsBaseUrl + '/getRent',
+createRents: environment.rentsBaseUrl + '/createRent',
+editRents: environment.rentsBaseUrl + '/editRent',
+deleteRents: environment.rentsBaseUrl + '/deleteRent',
 };
